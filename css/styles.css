@@ -1,14 +1,12 @@
 :root {
   --primary-logo-color: #000000;
-  --footer-logo-color: #ffffff;
   --primary-txt-color: #212121;
   --secondary-txt-color: #757575;
-  --accent-color: #2196f3;
+  --additional-txt-color: #ffffff;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --additional-bg-color: #2f303a;
-  --additional-txt-color: #ffffff;
-  --button-bg-color: #2196f3;
+  --accent-color: #2196f3;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -77,13 +75,20 @@ body {
 
 /* HERO */
 
+.hero {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.34px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .modal-btn {
@@ -150,7 +155,11 @@ body {
 }
 
 .footer .logo {
-  color: var(--footer-logo-color);
+  color: var(--additional-txt-color);
+}
+
+.footer-contacts {
+  font-style: normal;
 }
 
 .address {
@@ -184,7 +193,7 @@ body {
 .select-btn:hover,
 .select-btn:focus {
   color: var(--additional-txt-color);
-  background-color: var(--button-bg-color);
+  background-color: var(--accent-color);
 }
 
 .project-title {
